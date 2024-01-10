@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+
+:root {
+  --color-white: #f3f3f3;
+  --color-darkblue: #1b1b32;
+  --color-darkblue-alpha: rgba(27, 27, 50, 0.8);
+  --color-green: #37af65;
+}
+
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ),
+    url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--color-white);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 48px;
+  margin-bottom: 32px;
+  line-height: 0.8;
+}
+
+h1 {
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+p{
+  font-size: 1.05rem;
+  font-style: italic;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-darkblue-alpha);
+  border-radius: 4px;
+  padding: 32px 28px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+label,
+input,
+select,
+textarea,
+button {
+  font-size: 1.05rem;
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+label {
+  margin-bottom: 8px;
+}
+
+input,
+select {
+  padding: 6px 10px;
+  border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.form-flex > label {
+  display: flex;
+  align-items: center;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+  width: unset;
+  margin: 0 0.625rem 0 0;
+  min-width: 1.25rem;
+  min-height: 1.25rem;
+}
+
+.explanation {
+  margin-left: 0.25rem;
+  font-size: 0.75rem;
+  color: #e4e4e4;
+}
+
+.last-element {
+  margin-bottom: 32px;
+}
+
+textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  border-radius: 4px;
+}
+
+
+button {
+  background-color: var(--color-green);
+  border: none;
+  color: var(--color-white);
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
